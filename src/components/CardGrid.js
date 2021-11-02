@@ -12,9 +12,7 @@ const CardGrid = () => {
 					key={card.id}
 					card={card}
 					flipped={
-						card === choice1 ||
-						card === choice2 ||
-						card.matched
+						card === choice1 || card === choice2 || card.matched
 					}
 				/>
 			))}

@@ -37,7 +37,7 @@ function App() {
 				setTurns((prevTurn) => prevTurn + 1);
 				setChoice1(null);
 				setChoice2(null);
-			}, 1000);
+			}, 600);
 		}
 	}, [choice1, choice2]);
 
@@ -68,6 +68,8 @@ function App() {
 			>
 				<CardGrid />
 			</CardContext.Provider>
+
+			<h2>Turns: {turns}</h2>
 		</div>
 	);
 }
