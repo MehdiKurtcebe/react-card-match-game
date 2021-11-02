@@ -33,9 +33,11 @@ function App() {
 					});
 				});
 			}
-			setTurns((prevTurn) => prevTurn + 1);
-			setChoice1(null);
-			setChoice2(null);
+			setTimeout(() => {
+				setTurns((prevTurn) => prevTurn + 1);
+				setChoice1(null);
+				setChoice2(null);
+			}, 1000);
 		}
 	}, [choice1, choice2]);
 
